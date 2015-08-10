@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03D81025C5640B5CE9C8E124 /* Pods_BonjourWeb_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 027433E5184182DFFCC608B5 /* Pods_BonjourWeb_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
-		11D3775C4B5880045E2C6CFF /* Pods_BonjourWeb_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC656D1CEA82A1CC4C3551AF /* Pods_BonjourWeb_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		06AE7C568840687752D88ACE /* libPods-BonjourWeb_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1905DFDB83333E2ED595593E /* libPods-BonjourWeb_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,6 +22,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
+		BC0A6CE26B3BE37208E48E25 /* libPods-BonjourWeb_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F05B9005AF6495AEC55B823 /* libPods-BonjourWeb_Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +36,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		027433E5184182DFFCC608B5 /* Pods_BonjourWeb_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonjourWeb_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1905DFDB83333E2ED595593E /* libPods-BonjourWeb_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BonjourWeb_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		219213B851100ED6A5EE99E5 /* Pods-BonjourWeb_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonjourWeb_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BonjourWeb_Example/Pods-BonjourWeb_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3C4FB415709FB3E8A5E38B56 /* Pods-BonjourWeb_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonjourWeb_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BonjourWeb_Tests/Pods-BonjourWeb_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		5F05B9005AF6495AEC55B823 /* libPods-BonjourWeb_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BonjourWeb_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* BonjourWeb_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BonjourWeb_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,7 +64,6 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		98841AAA4DF054BCB4996694 /* Pods-BonjourWeb_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BonjourWeb_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BonjourWeb_Example/Pods-BonjourWeb_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A327E12AEEF785365EABA48C /* BonjourWeb.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BonjourWeb.podspec; path = ../BonjourWeb.podspec; sourceTree = "<group>"; };
-		BC656D1CEA82A1CC4C3551AF /* Pods_BonjourWeb_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BonjourWeb_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2967B9CC9616CFA93C15769 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -75,7 +75,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				11D3775C4B5880045E2C6CFF /* Pods_BonjourWeb_Example.framework in Frameworks */,
+				06AE7C568840687752D88ACE /* libPods-BonjourWeb_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				03D81025C5640B5CE9C8E124 /* Pods_BonjourWeb_Tests.framework in Frameworks */,
+				BC0A6CE26B3BE37208E48E25 /* libPods-BonjourWeb_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,8 +132,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				BC656D1CEA82A1CC4C3551AF /* Pods_BonjourWeb_Example.framework */,
-				027433E5184182DFFCC608B5 /* Pods_BonjourWeb_Tests.framework */,
+				1905DFDB83333E2ED595593E /* libPods-BonjourWeb_Example.a */,
+				5F05B9005AF6495AEC55B823 /* libPods-BonjourWeb_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -204,7 +204,6 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				9258D3B38E32D0D46857ABBF /* Embed Pods Frameworks */,
 				F2B6D6F070562CB1DB1F0EAE /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -224,7 +223,6 @@
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				923FC9BFC8815D038B762CAE /* Embed Pods Frameworks */,
 				74A4302D950A33E29BB89EA8 /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -336,36 +334,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BonjourWeb_Tests/Pods-BonjourWeb_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		923FC9BFC8815D038B762CAE /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BonjourWeb_Tests/Pods-BonjourWeb_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9258D3B38E32D0D46857ABBF /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BonjourWeb_Example/Pods-BonjourWeb_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F2B6D6F070562CB1DB1F0EAE /* Copy Pods Resources */ = {
