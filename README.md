@@ -1,5 +1,8 @@
 # BonjourWeb
 
+Objective-C sample project and pod to discover web services via bonjour
+Based on sample code form Apple which has been modernized for arc and made ready for cocoapods
+
 [![CI Status](http://img.shields.io/travis/Claus Weymann/BonjourWeb.svg?style=flat)](https://travis-ci.org/Claus Weymann/BonjourWeb)
 [![Version](https://img.shields.io/cocoapods/v/BonjourWeb.svg?style=flat)](http://cocoapods.org/pods/BonjourWeb)
 [![License](https://img.shields.io/cocoapods/l/BonjourWeb.svg?style=flat)](http://cocoapods.org/pods/BonjourWeb)
