@@ -199,11 +199,11 @@
     UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:tableCellIdentifier];
-        
-        cell.backgroundColor = indexPath.row % 2 ? [UIColor colorWithWhite:0.8 alpha:1.0] : [UIColor colorWithWhite:1.0 alpha:1.0];
-        cell.selectionStyle = UITableViewCellSelectionStyleGray;
-        cell.accessoryView = [[UIImageView alloc] initWithImage:self.accessoryImage];
     }
+
+    cell.backgroundColor = indexPath.row % 2 ? [UIColor colorWithWhite:0.8 alpha:1.0] : [UIColor colorWithWhite:1.0 alpha:1.0];
+    cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    cell.accessoryView = [[UIImageView alloc] initWithImage:self.accessoryImage];
     
     NSUInteger count = [self.services count];
     if (count == 0 && self.searchingForServicesString) {
@@ -375,8 +375,22 @@
     [self stopCurrentResolve];
     
     [self.delegate browserViewController:self didResolveInstance:service];
+
+    if ([self shouldSelectService:service]) {
+        [self.delegate browserViewController:self didSelectService:service];
+    }
 }
 
+- (BOOL)shouldSelectService:(NSNetService*)service {
+    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+    if (selectedIndexPath && selectedIndexPath.row < self.services.count) {
+        NSNetService *selectedService = [self.services objectAtIndex:selectedIndexPath.row];
+        if ([selectedService isEqual:service]) {
+            return YES;
+        }
+    }
+    return NO;
+}
 
 - (void)cancelAction {
     [self.delegate browserViewController:self didResolveInstance:nil];
