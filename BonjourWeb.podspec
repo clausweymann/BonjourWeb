@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "BonjourWeb"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Discover Bonjour services and connect to them"
   s.description      = <<-DESC
                        Pod based on the sample code, modernised for arc.
